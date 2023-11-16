@@ -1,0 +1,15 @@
+{
+  "freshdesk_domain": {
+    "display_name": "Freshdesk Domain",
+    "type": "text",
+    "description": "Your Freshdesk domain in complete format. Eg. mycompany.freshdesk.com",
+    "required": true
+  },
+  "freshdesk_api_key": {
+    "display_name": "Freshdesk API Key",
+    "type": "text",
+    "description": "Your Freshdesk API key.",
+    "required": true,
+    "secure": true
+  }
+}

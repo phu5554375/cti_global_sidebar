@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>A Template App</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script async src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://static.freshdev.io/fdk/2.0/assets/freshdesk.css">
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script> -->
+  <!-- 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"> -->
+
+  <!-- Optional theme -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css"> -->
+
+  <!-- Latest compiled and minified JavaScript -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+
+</head>
+
+<body>
+  <div class="main">
+    <!-- <p>Utilize this template code to build your App</p>
+    <p id="apptext"></p> -->
+  </div>
+  <div class="fw-widget-wrapper" style="background: #12344D;">
+    <span style="color: aliceblue; line-height: 2%;">SST-CQ05 1100</span>
+    <fw-button class="action-buttons flr" id="btnClose" size="small" color="primary">__
+    </fw-button><br><br>
+    <!-- <fw-button class="action-buttons" id="btnShowMissedCalls" size="small" color="primary">
+      Show missed calls
+    </fw-button><br><br> -->
+    <div class="fw-divider-solid"></div>
+    <div>
+    </div>
+
+    <div class="row  menu-app">
+      <div class="col-sm-3 muted">
+        <span>13131</span>
+      </div>
+      <div class="col-sm-3 muted">
+        <span id="btnClose1"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+            data-test-id="timeline-icon-email" class="app-icon contacts-thumb__info--icon app-icon--small">
+            <path
+              d="M2.56 5.333h26.347c1.119 0 2.027.912 2.027 2.036v18.327a2.03 2.03 0 01-2.027 2.036H2.56a2.032 2.032 0 01-2.027-2.036V7.369A2.03 2.03 0 012.56 5.333zm.405 2.444V25.29h25.536V7.777H2.965zm4.323 3.667l8.445 5.657 8.445-5.657c.559-.374 1.314-.223 1.686.339s.222 1.32-.337 1.694l-9.12 6.109a1.21 1.21 0 01-1.349 0l-9.12-6.109c-.559-.374-.71-1.133-.337-1.694s1.128-.713 1.686-.339z">
+            </path>
+          </svg></span>
+      </div>
+      <div class="col-sm-3 muted">
+        One of three columns
+      </div>
+      <div class="col-sm-3 muted">
+        One of for columns
+      </div>
+    </div>
+  </div>
+
+  <fw-input label="Freshdesk API Key" icon-right="magic-wand" placeholder="Freshdesk Portal > Profile > Copy API Key"
+    required="true" minlength="5" size="30" class="secure-field" data-bind="product.api_key"></fw-input>
+
+  <fw-select label="Select a Transformation" class="select-alien">
+    <div slot="dropdown-options">
+      <fw-select-option id="1" value="Cannonbolt">Cannonbolt</fw-select-option>
+      <fw-select-option id="2" value="Heatblast">Heatblast</fw-select-option>
+      <fw-select-option id="3" value="Four Arms">Four Arms</fw-select-option>
+      <fw-select-option id="4" value="Grey matter">Grey matter</fw-select-option>
+      <fw-select-option id="5" value="Jetray">Jetray</fw-select-option>
+      <fw-select-option id="6" value="Humungousaur">Humungousaur</fw-select-option>
+      <fw-select-option id="7" value="Slapback">Slapback</fw-select-option>
+      <fw-select-option id="8" value="Goop">Goop</fw-select-option>
+      <fw-select-option id="9" value="Way Big">Way Big</fw-select-option>
+      <fw-select-option id="10" value="Diamond Head">Diamond Head</fw-select-option>
+    </div>
+  </fw-select>
+
+  <section class="date-domain">
+    <fw-label value="Date picker demo" color="grey"></fw-label>
+    <fw-datepicker placeholder="range" mode="single date" class="datepicker"></fw-datepicker>
+    <fw-input required="true" type="text" icon-left="items" label="domain" size="30"
+      placeholder="subdomain.freshdesk.com" class="domain" data-bind="product.domain"></fw-input>
+  </section>
+  </main>
+
+</body>
+
+<script defer src="scripts/app.js"></script>
+<script async type="module" src="https://unpkg.com/@freshworks/crayons@3/dist/crayons/crayons.esm.js"></script>
+<script async nomodule src="https://unpkg.com/@freshworks/crayons@3/dist/crayons/crayons.js"></script>
+
+</html>
