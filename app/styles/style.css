@@ -28,9 +28,10 @@ html {
   align-items: center;
   padding-top: 12px;
   padding-bottom: 12px;
+  margin: 0;
 }
 
-.card {
+/* .card {
   position: relative;
   background-color: #fff;
   background-clip: border-box;
@@ -63,4 +64,18 @@ html {
 
 .space-below {
   margin-bottom: 1rem;
+} */
+
+.txt-phone {
+  padding: 16px 8px;
+}
+
+.enter-phone{
+  padding-top: 48px;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
 }
